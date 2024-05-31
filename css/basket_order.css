@@ -1,0 +1,181 @@
+section{
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+/* order 메인 div */
+.order_Main_div{
+    width: 1200px;
+    /* height: 1200px; */
+    /* border: solid 1px red; */
+}
+
+.bar{
+    border-left: solid 3px black;
+    margin-right: 10px;
+}
+
+.bar2{
+    border-left: solid 1px #e5e5e5;
+    color: #777777;
+}
+
+/* 주문 상품 div */
+.product_div{
+    width: 1200px;
+    height: 200px;
+    border: solid 1px #e5e5e5;
+    background-color: #f9f9f9;
+    padding: 40px;
+    box-sizing: border-box; 
+}
+
+.product_inner_div{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 1px #e5e5e5;
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+/* 주문 상품 이미지 div */
+.order_img_div{
+    width: 118px;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.order_img_div img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 주문 상품 설명 */
+.item_explanation{
+    width: 400px;
+}
+
+/* 주문 상품 수량 */
+.item_count{
+    width: 200px;
+}
+
+/* 주문 상품 가격 */
+.item_price{
+    width: 200px;
+}
+
+/* 주문 배송비 */
+.delivery_price{
+    width: 175px;
+    text-align: center;
+}
+
+/* 주문하기 페이지 텍스트 */
+.order_text{
+    font-size: 11px;
+    color: #777;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.text{
+    font-size: 11px;
+    color: #777;
+    margin: 0;
+}
+
+/* 테이블 설정 시작 */
+.Orderer_info_teble{
+    border-collapse: collapse; 
+    width: 1200px;
+    font-size: 13px;
+}
+
+.Orderer_info_teble tr{
+    height: 55px;
+}
+
+.Orderer_info_teble tr th{
+    border: solid 1px #e5e5e5;
+    width: 220px;
+    background-color: #f9f9f9;
+}
+
+.Orderer_info_teble tr td{
+    border: solid 1px #e5e5e5;
+    padding-left: 20px;
+}
+
+input[type="text"] {
+    width: 430px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+}
+
+input[type="radio"] {
+    margin-right: 8px; 
+}
+
+select{
+    width: 120px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+    color: #6c6c6c;
+}
+
+.zip_code_Btn{
+    width: 120px;
+    height: 32px;
+    background-color: #333333; 
+    border: none; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 13px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+    transition-duration: 0.4s; 
+    
+}
+/* 테이블 설정 끝 */
+
+.red{
+    color: red;
+}
+
+/* 주문 버튼 div */
+.order_Btn_div{
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+.order_Btn_img_div{
+    width: 150px;
+    height: 60px;
+    /* border: solid 1px red; */
+    margin: 100px 5px 100px 5px;
+}
+
+.order_Btn_img_div img {
+    width: 100%;
+    height: auto; /* 가로 비율에 맞게 높이 자동 조정 */
+    cursor: pointer;
+}
+
+

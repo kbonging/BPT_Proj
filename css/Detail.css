@@ -1,0 +1,162 @@
+.main_contents{
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    background-color: #f9f9f9;
+}
+
+.pro_Detail_div{
+    /* border: solid 1px blue; */
+    width: 1200px;
+    height: 1200px;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    padding-top: 50px;
+}
+
+.sell_left{
+    /* border: solid 1px blue; */
+    width: 600px;
+    height: 700px;
+}
+
+/* 상세이미지 시작 */
+
+.Detail_img_div{
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+    /* border: solid 1px red; */
+}
+
+.Detail_img_div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* 상세이미지 끝 */
+
+.sell_guide{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.sell_guide li {
+    width: 265px; 
+    height: 50px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    text-align: center; 
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.sell_right{
+    /* border: solid 1px blue; */
+    width: 500px;
+    height: 800px;
+}
+
+.Detail_title{
+    /* border: solid 1px red; */
+    border-bottom: solid 1px #e5e5e5;
+    width: 500px;
+    height: 80px;
+}
+
+.main_title{
+    font-size: 25px;
+}
+
+.Detail_coupon_img{
+    /* border: solid 1px red; */
+    width: 500px;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0 20px 0;
+}
+
+.sale_coupon_img{
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.delivery_amount{
+    /* border: solid 1px blue; */
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.Detail_option_table select {
+    width: 500px; /* 원하는 너비로 설정 */
+    height: 30px; /* 원하는 높이로 설정 */
+    
+}
+
+.total_prodcut_price_div{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.total_prodcut_price{
+    font-size: 25px;
+}
+
+.red{
+    color: red;
+}
+
+/* 쇼핑 계속하기, 주문하기 버튼 시작 */
+.Btn_Div{
+    /* border: solid 1px #007d1e; */
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    height: 50px;
+    margin-top: 50px;
+    
+}
+
+.purchase_btn{
+    /* border: solid 1px #333; */
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    font-size: 15px;
+    margin: 0 2px 0 2px;
+    background-color: #003942;
+    color: white;
+    cursor: pointer;
+}
+
+.Register_shopping_cart{
+    /* border: solid 1px #333; */
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    font-size: 15px;
+    margin: 0 2px 0 2px;
+    background-color: #e9e2d8;
+    color: #003942;
+    cursor: pointer;
+}
+
+/* 쇼핑 계속하기, 주문하기 버튼 끝 */

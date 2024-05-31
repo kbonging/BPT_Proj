@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            height: 60px;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none; 
+            color: inherit;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            float: left;
+            width: 1100px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #logo{
+            width: 300px;
+            height: 60px;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            align-items: center;
+            background-color: gray;
+            float: left;
+            margin-left: 200px;
+        }
+
+        .search-box {
+            width: 400px;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            outline: none;
+            font-size: 16px;
+            margin: 7px 0 0 230px;
+            position: fixed;
+        }
+
+        #signDiv{
+            float:right;
+            height: 60px;
+            margin-right: 330px;
+        }
+        
+
+        .Signin-button{
+            width: 85px;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+        }
+
+        .Signup-button{
+            width: 85px;
+            padding: 12px;
+            border: solid 1px black;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .asideDiv_left{
+            width: 200px;
+            height: 700px;
+            background-color: gray;
+            margin-left: 200px;
+            float: left;
+       
+            
+        }
+
+        .mainImg{
+            width: 1100px;
+            height: 300px;
+            background-color: gainsboro;
+           
+        }
+
+        .asideDiv_right{
+            width: 200px;
+            height: 700px;
+            background-color: gray;
+            float: right;
+            margin-right: 203px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <div id='logo'>
+            BPT
+            </div>
+        </a>
+        <div id="serchBox">
+            <input type="text" class="search-box" placeholder="검색어를 입력하세요...">
+        
+          
+        </div>
+        <div id="signDiv">
+            <button class="Signin-button" onclick="location.href='index_2.html'" >Sign in</button>
+            <button class="Signup-button">Sign up</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">프로틴</a></li>
+            <li><a href="#"> | </a></li>
+            <li><a href="#">보조식품</a></li>
+            <li><a href="#"> | </a></li>
+            <li><a href="#">스포츠용품</a></li>
+            <li><a href="#"> | </a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#"> | </a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <div class="asideDiv_left"></div>
+    </aside>
+
+    <section>
+        <div class="mainDiv">
+            <div class="mainImg"></div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="asideDiv_right"></div>
+    </aside>
+    <iframe src="inc/footer.html" frameborder="0"></iframe> <!-- 하단바 footer-->
+
+</body>
+
+</html>

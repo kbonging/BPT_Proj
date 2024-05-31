@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Banner</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            width: 100%;
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .banner img {
+            width: 80%;
+            height: auto;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        /* Example content to enable scrolling */
+        .content div {
+            height: 1000px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <img src="path/to/your/image.jpg" alt="Banner Image">
+</div>
+
+<div class="content">
+    <div>Content Block 1</div>
+    <div>Content Block 2</div>
+    <div>Content Block 3</div>
+    <div>Content Block 4</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var banner = $('.banner');
+        var bannerOffset = banner.offset().top;
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > bannerOffset) {
+                banner.addClass('sticky');
+            } else {
+                banner.removeClass('sticky');
+            }
+        });
+    });
+</script>
+</body>
+</html>

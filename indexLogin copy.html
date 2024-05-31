@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>테스트</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            width: 100%;
+            height: 150px;
+            border: solid 1px red;
+        }
+
+
+        /* 리셋 CSS */
+* {margin:0;padding:0;box-sizing:border-box;}
+ul, li {list-style:none;}
+
+.slidelist{
+    width: 1400px;
+    height: 400px;
+}
+
+/* 슬라이드 Style */
+.slidebox {
+    /* max-width:1000px; */
+    margin:0 auto;
+}
+.slidebox .slidelist {white-space:nowrap;font-size:0;overflow:hidden;}
+.slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;width:100%;transition:all 1s;}
+.slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
+.slidebox .slidelist .slideitem > a img {max-width:100%;}
+.slidebox .slidelist .slideitem > a label {position:absolute;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+.slidebox .slidelist .slideitem > a label.prev {left:20px;background:#333 url('./img/left-arrow.png') center center / 50% no-repeat;}
+.slidebox .slidelist .slideitem > a label.next {right:20px;background:#333 url('./img/right-arrow.png') center center / 50% no-repeat;}
+
+
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 15s infinite;}
+#slide02:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 15s infinite;}
+#slide03:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 15s infinite;}
+
+
+@keyframes slide01 {
+	0% {left:0%;}
+	33% {left:0%;}
+	34% {left:-100%}
+	66% {left:-100%;}
+	67% {left:-200%;}
+	99% {left:-200%;}
+	100% {left:0%;}
+}
+
+@keyframes slide02 {
+	0% {left:0%;}
+	33% {left:0%;}
+	34% {left:-100%;}
+	66% {left:-100%;}
+	67% {left:100%;}
+	99% {left:100%;}
+	100% {left:0%;}
+}
+
+@keyframes slide03 {
+	0% {left:0%;}
+	33% {left:0%;}
+	34% {left:200%;}
+	66% {left:200%;}
+	67% {left:100%;}
+	99% {left:100%;}
+	100% {left:0%;}
+}
+       
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div id="headerDiv">
+            <div id="logoDiv"><a href="indexLogin.html" class="logo">BPT</a></div>
+
+            <div id="serchBox">
+                <input type="text" class="search-box" placeholder="검색어를 입력하세요...">
+            </div>
+           
+            <div id="signDiv">
+                <a href="basket.html"><img src="img/shoppingBasket.png" alt="" width="100px"></a>
+                <button class="Signin-button" onclick="location.href='MyPage.html'" >MyPage</button>
+                <button class="Signup-button" onclick="location.href='index.html'">Sign out</button>
+            </div>
+        </div>
+    
+    </header>
+
+    <nav id="headNav">
+        <ul>
+           <a href="proteinList.html"><li class="menuList">프로틴</li></a> 
+           <li> | </li>
+           <a href="#"><li class="menuList">보조식품</li></a> 
+           <li> | </li>
+           <a href="#"><li class="menuList">스포츠용품</li></a> 
+           <li> | </li>
+           <a href="#"><li class="menuList">커뮤니티</li></a> 
+           <li> | </li>
+           <a href="#"><li class="menuList">고객센터</li></a> 
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+        <div class="slidebox">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <ul class="slidelist">
+                <li class="slideitem">
+                    <a>
+                        <label for="slide03" class="prev"></label>
+                        <img src="./img/mainImg1.png">
+                        <label for="slide02" class="next"></label>
+                    </a>
+                </li>
+                <li class="slideitem">
+                    <a>
+                        <label for="slide01" class="prev"></label>
+                        <img src="./img/mainImg2.png">
+                        <label for="slide03" class="next"></label>
+                    </a>
+                </li>
+                <li class="slideitem">
+                    <a>
+                        <label for="slide02" class="prev"></label>
+                        <img src="./img/mainImg3.png">
+                        <label for="slide01" class="next"></label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="brDiv"></div>
+        
+        <section class='contentsList'>
+            
+            <div class="individual_Div">
+                <a href="#">
+                    <div class="individual_imgDiv"><img src="img/product1.png" alt="" class="individual_img"></div>
+                    <div class="individual_prodName">프리-워크아웃</div>
+                    <div class="individual_proEx">레몬 맛</div>
+                </a>
+            </div>
+            <div class="individual_Div">
+                <a href="#">
+                    <div class="individual_imgDiv"><img src="img/product1.png" alt="" class="individual_img"></div>
+                    <div class="individual_prodName">프리-워크아웃</div>
+                    <div class="individual_proEx">레몬 맛</div>
+                </a>
+            </div>
+            <div class="individual_Div">
+                <a href="#">
+                    <div class="individual_imgDiv"><img src="img/product1.png" alt="" class="individual_img"></div>
+                    <div class="individual_prodName">프리-워크아웃</div>
+                    <div class="individual_proEx">레몬 맛</div>
+                </a>
+            </div>
+            
+            
+        </section>
+
+        <div class="brDiv"></div>
+        
+        <section class='contentsList'>
+            
+            <div class="individual_Div">
+                <a href="#">
+                    <div class="individual_imgDiv"><img src="img/product1.png" alt="" class="individual_img"></div>
+                    <div class="individual_prodName">프리-워크아웃</div>
+                    <div class="individual_proEx">레몬 맛</div>
+                </a>
+            </div>
+            <div class="individual_Div">
+                <a href="#">
+                    <div class="individual_imgDiv"><img src="img/product1.png" alt="" class="individual_img"></div>
+                    <div class="individual_prodName">프리-워크아웃</div>
+                    <div class="individual_proEx">레몬 맛</div>
+                </a>
+            </div>
+            <div class="individual_Div">
+                <a href="#">
+                    <div class="individual_imgDiv"><img src="img/product1.png" alt="" class="individual_img"></div>
+                    <div class="individual_prodName">프리-워크아웃</div>
+                    <div class="individual_proEx">레몬 맛</div>
+                </a>
+            </div>
+            
+            
+        </section>
+        
+        <div class="brDiv"></div>
+    </main>
+    <div class='clear'></div> <!-- float 속성 해제-->
+    <footer class="footer_main">
+        <div class="footer_main_div">
+            <div class="footer_contents">
+                <span><a href="#">오시는길</a></span>
+                <span>|</span>
+                <span><a href="#">이용약관</a></span>
+                <span>|</span>
+                <span><a href="#">개인정보취급방침</a></span>
+            </div>
+            <br>
+            <div class="footer_contents">
+                <span><a href="#">BPT 경기 김포시 풍무로 000</a></span>
+                <span>|</span>
+                <span><a href="#">T.031-000-0000</a></span>
+                <span>|</span>
+                <span><a href="#">F.031-000-0100</a></span>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        $(function(){
+
+            //회원가입 버튼
+            $('#signup_btn').click(function(){
+                alert('회원가입 완료되었습니다.');
+            });
+
+            // 이메일 인증요청 버튼
+            $('.certificationBtn').click(function(){
+                alert('인증번호 발송되었습니다.');
+            });
+
+        });
+    </script>
+    <style>
+      
+
+        body{
+            background-color: #e9e2d8;
+           
+        }
+
+        .mainSection{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column; /* 세로 방향으로 아이템들을 배치 */
+            align-items: center; /* 수직 가운데 정렬 */
+        }
+
+        .mainDiv{
+            /* border: solid 1px gray; */
+            width: 400px;
+            height: 630px;
+            margin: 0 auto;
+            background-color: white;
+            
+        }
+        
+        .logoDiv{
+            width: 200px;
+            /* border: solid 1px gray; */
+            height: 70px;
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h3{
+            font-size: 30px;
+            margin: 10px 0 0 20px;
+        }
+
+        .inputDiv{
+            display: flex;
+            flex-direction: column; /* 세로 방향으로 아이템들을 배치 */
+            align-items: center; /* 수직 가운데 정렬 */
+        }
+
+        .inputDiv div{
+            width: 300px;
+            height: 70px;
+            /* border: solid 1px gray; */
+            margin: 10px 0 -10px 10px;
+        }
+
+        .inputDiv div input{
+            width: 280px;
+            height: 30px;
+            border-radius: 7px;
+        }
+        
+        .pwInformation{
+            text-align: right;
+            margin-right: 50px;
+            text-decoration: underline;
+        }
+        
+        .button{
+            width: 300px;
+            height: 45px;
+            background-color: #003942;
+            border:none;
+            color: #e9e2d8;
+            font-size: 18px;
+        }
+        .buttonDiv{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .divBr{
+            height: 10px;
+        }
+
+        a {
+            /* text-decoration: none;  */
+            color: inherit;
+        }
+
+        .certificationBtn{
+            color: #003942;
+            border: none;
+            width: 300px;
+
+        }
+
+        input.certificationBtn {
+            margin-left: 4px;
+            margin-bottom: 11px;
+        }
+
+        .certificationBtnDiv{
+            padding-bottom: 20px;
+        }
+
+        .phonSpan{
+            font-size: 10px;
+            color: gray;
+        }
+
+        .checkDiv{
+            text-align: center;
+            margin-top: 10px;
+            margin-left: -48px;
+        }
+
+        .logo{
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="mainSection">
+            <div class="logoDiv"><a href="index.html" class="logo">BPT</a></div>
+            <div class="mainDiv">
+                <h3>Sign up</h3>
+                <div class="inputDiv">
+                    <div>
+                        eMail<br>
+                        <input type="text" >
+                    </div>
+                    <div class="certificationBtnDiv">
+                        <input type="button" value="인증번호 요청" class="certificationBtn" onclick="location.href='#'">
+                        <input type="text" placeholder="인증번호 입력">
+                    </div>
+                    <div>
+                        password<br>
+                        <input type="password" >
+                    </div>
+                    <div>
+                        password check<br>
+                        <input type="password" >
+                    </div>
+                    <div>
+                        이름<br>
+                        <input type="text" >
+                    </div>
+                    <div>
+                        휴대폰번호<span class="phonSpan"> ("-" 빼고 숫자만 입력)</span><br>
+                        <input type="text" >
+                    </div>
+                </div>
+                <div class="checkDiv"><input type="checkbox">[필수] 확인하였으며 동의합니다.</div>
+                <br>
+                <div class="buttonDiv"><input type="button" value="회원가입" class="button" onclick="location.href='signin.html'" id="signup_btn"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

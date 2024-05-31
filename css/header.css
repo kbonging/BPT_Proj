@@ -1,0 +1,165 @@
+/* ------------------헤더 시작------------------  */
+
+
+header {
+    background-color: #e9e2d8;
+}
+
+#headerDiv{
+    width: 1300px;
+    height: 70px;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+}
+
+#logoDiv{
+    /* flex-basis: 250px; */
+    height: 70px;
+    border: none;
+    font-size: 50px;
+    text-align: center;
+    flex-grow: 1;
+    color: #003942;
+}
+
+#serchBox{
+    border: none;
+    /* flex-basis: 700px; */
+    height: 70px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.search-box{
+    width: 400px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+}
+
+#signDiv{
+    /* flex-basis: 200px; */
+    border: none;
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.Signin-button{
+    width: 90px;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: 10px; /* 버튼 사이 간격 */
+    background-color: transparent;
+    color: #003942;
+    transition-duration: 0.4s; 
+}
+
+.Signup-button{
+    width: 90px;
+    padding: 12px;
+    border: solid 1px #003942;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: 10px; /* 버튼 사이 간격 */
+    color: #003942;
+    transition-duration: 0.4s;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+
+/* ------------------헤더 끝------------------*/
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+/* ------------------네비 시작------------------*/
+
+.nav_sub_menu{
+    width: 130px;
+}
+
+/* ///////////네비 시작//////////// */
+/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+    menu박스 가운데정렬, 글자가운데 정렬 */
+	#menu {
+		font:bold 16px "malgun gothic";
+		width:700px;
+		height:40px;
+		background: #003942;
+		color: red;
+		line-height: 40px; 
+		margin:0 auto;
+		text-align: center;
+	}
+
+    /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+	#menu > ul > li {
+		float:left;
+		width:140px;
+		position:relative;
+	}
+
+    #menu > ul > li > ul {
+		width:130px;
+		display:none;
+		position: absolute;
+		font-size:14px;
+		background: #003942;
+	}
+
+    #menu > ul > li:hover > ul {
+		display:block;
+	}
+
+    #menu > ul > li > ul > li {
+    padding: 5px 20px; /* 상하 5px, 좌우 0 */
+    }
+/* ///////////네비 끝//////////// */
+
+
+/* 사용안함 */
+#headNav{
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    background-color: #003942;
+}
+
+#headNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#headNav ul li{
+    display: inline;
+    align-items: center;
+    /* flex-grow: 1; */
+    color: #e9e2d8;
+    
+}
+
+.menuList{
+    padding: 0 40px 0 40px;
+}
+/* 사용안함 */
+
+
+/* ------------------네비 끝------------------*/

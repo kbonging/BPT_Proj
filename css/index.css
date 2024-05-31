@@ -1,0 +1,94 @@
+/* ------------ 메인 이미지 버튼 시작 ------------- */
+
+#prevBtn, #nextBtn {
+    background-color: white; /* 버튼 배경색 */
+    border: none;
+    color: #003942; /* 버튼 텍스트 색상 */
+    padding: 15px 32px; /* 버튼 크기 */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.4s; 
+}
+
+
+#prevBtn:hover,
+#nextBtn:hover {
+    filter: brightness(0.7);
+    /* 호버 시 배경색 변경 */
+}
+
+/* ------------ 메인 이미지 버튼 끝 ------------- */
+
+/* ------------------mainContent 시작------------------*/
+
+.mainContent_DIV{
+    display: flex;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_img {
+    width: 1400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.main_img {
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+}
+
+
+
+
+.brDiv {
+    height: 50px;
+}
+
+.contentsList {
+    width: 1300px;
+    height: 500px;
+    margin: 0 auto;
+    /* border: solid 1px red; */
+    display: flex;
+}
+
+.individual_Div {
+    width: 400px;
+    height: 500px;
+    /* border: solid 1px red; */
+    margin: 0 auto 0 auto;
+}
+
+.individual_imgDiv {
+    width: 400px;
+    height: 400px;
+    /* border: solid 1px red; */
+    overflow: hidden;
+}
+
+.individual_img {
+    width: 100%;
+}
+
+.individual_prodName {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.individual_proEx {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+/* ------------------mainContent 끝------------------*/
