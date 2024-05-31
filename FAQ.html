@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.title').click(function() {
+                $(this).siblings('.Content').slideToggle();
+                $(this).toggleClass('contentOpen');
+            });
+        });
+    </script>
+    <style type="text/css">
+    .body * {
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        /* margin-top: 100px; */
+        margin-bottom: 100px;
+        width: fit-content;
+    }
+
+    .faq {
+        border-bottom: 5px solid rgba(255, 255, 255, .5);
+        font-size: 15px;
+        width: 600px;
+        font-weight: 900;
+        font-weight: bold;
+    }
+
+    .title {
+        font-weight: bold;
+        padding: 10px 36px 10px 0;
+        position: relative;
+        cursor: pointer;
+        padding-left: 50px;
+        border-bottom: 2px solid black;
+        font-size: 15pt;
+    }
+
+    .title:after {
+        content: "+";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 36px;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-weight: bold;
+        color: inherit;
+        font-size: 20px;
+    }
+
+    .title.contentOpen:after {
+        content: "-";
+    }
+
+    .Content {
+        display: none;
+        padding-left: 50px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 11pt;
+    }
+
+    .one {
+        text-align: center;
+    }
+
+    .one p {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        font-weight: 700;
+    }
+
+    .one div {
+        border: 1px solid #9d9d9d;
+        width: 250px;
+        height: 50px;
+        vertical-align: middle;
+        line-height: 50px;
+        font-size: 10pt;
+        font-weight: 400;
+        border-radius: 5px 5px 5px 5px;
+        background-color: #f5f5f5;
+    }
+
+    .one a {
+        text-decoration: none;
+    }
+
+    .one a:hover {
+        font-weight: bold;
+    }
+
+    .inquiry {
+        margin: 0 auto;
+    }
+    </style>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        
+
+        /* ------------------mainContent 시작------------------*/
+
+        #mainContent{
+            display: flex;
+            justify-content: center; /* 수평 가운데 정렬 */
+            background-color: #f2f4f7;
+            /* height: 100vh; 화면 전체 높이를 기준으로 섹션을 가운데로 정렬 */
+        }
+
+        #mainSection{
+            display: flex;
+            flex-direction: column; /* 세로 방향으로 아이템들을 배치 */
+            
+            /* 수직 가운데 정렬 */
+            align-items: center; 
+            background-color: white;
+            border: solid 1px #dce1eb;
+            width: 700px;
+            margin: 30px 10px 10px 10px;
+        }
+
+        /* 왼쪽 사이드바 스타일 */
+        #sidebar_left {
+            width: 200px;
+            height: 700px;
+            /* background-color: #f1f1f1; */
+            /* border: solid 1px green; */
+            margin: 30px 10px 10px 10px;
+        }
+        .subMenuList_main{
+            height: 100px;
+        }
+        
+        /* 오른쪽 사이드바 스타일 */
+        #sidebar_right {
+            width: 200px;
+            height: 700px;
+            background-color: #f2f4f7;
+            /* border: solid 1px green; */
+            font-size: 100px;
+            text-align: center;
+        }
+       
+        
+        .subMenuList{
+            padding: 5px 0px 5px 7px;
+            /* border: solid 1px green; */
+            background-color: white;
+            border: solid 1px #dce1eb;
+            border-top: white;
+        }
+        .subMenuList_first{
+            border-top: solid 1px #dce1eb;
+        }
+        
+        .subMenuList_ul{
+            list-style-type: none;
+            margin-left: -30px;
+        }
+
+        
+        .subMenuList_ul li a{
+            /* ul 내부의 li에 적용될 스타일 */
+            color: #8491a7;
+            font-size: 15px;
+        }
+
+        .subMenuList_title{
+            font-size: 23px;
+            padding-bottom: 5px;
+        }
+
+        .main_title{
+            font-size: 30px;
+        }
+
+        /* ------------section 시작----------------*/
+        
+
+        .section_div_title{
+            margin-left: -500px;
+        }
+
+        .person_field_table th{
+            width: 135px;
+            color: #8491a7;
+            text-align: left;
+        }
+
+        .person_field_table th, 
+        .person_field_table td{
+            padding: 8px 0;
+            border-bottom: 1px solid #eaedf4;
+        }
+
+        .person_field_body{
+            width: 350px;
+        }
+
+        .person_field_btn{
+            background-color: white;
+        }
+
+        /* ------------section 끝----------------*/
+
+
+        /* ------------------mainContent 끝------------------*/
+
+
+
+
+        footer {
+            width: 100%;
+            height: 150px;
+            border: solid 1px red;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <!-- //////////////////헤더 네비 시작////////////// -->
+    <header>
+        <div id="headerDiv">
+            <div id="logoDiv"><a href="index.html" class="logo">BPT</a></div>
+
+            <div id="serchBox">
+                <input type="text" class="search-box" placeholder="검색어를 입력하세요...">
+            </div>
+
+            <div id="signDiv">
+                <a href="basket.html"><img src="img/shoppingBasket.png" alt="" width="100px"></a>
+                <button class="Signin-button" onclick="location.href='signin.html'">Sign in</button>
+                <button class="Signup-button" onclick="location.href='signup.html'">Sign up</button>
+            </div>
+        </div>
+
+    </header>
+    
+
+    <nav id="headNav">
+        <div id="menu">
+            <ul>
+                <li><a href="proteinList.html">프로틴</a>
+                    <ul>
+                        <li><a href="#" >프로틴 분말</a></li>
+                        <li><a href="#" >프로틴 음료</a></li>
+                        <li><a href="#" >시니어 단백질</a></li>
+                    </ul>
+                </li>
+                <li><a href="Supplements_List.html">보조식품</a>
+                    <ul>
+                        <li><a href="#">닭가슴살</a></li>
+                        <li><a href="#">스페셜패키지</a></li>
+                        <li><a href="#">단백질 간식</a></li>
+                    </ul>
+                </li>
+                <li><a href="sporting_Goods_List.html">스포츠용품</a></li>
+                <li><a href="#">커뮤니티</a>
+                    <ul>
+                        <li><a href="#">자유게시글</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">QNA</a></li>
+                        <li><a href="#" class="FAQ">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- //////////////////헤더 네비 끝////////////// -->
+
+    
+    <div class="main_title">
+        <!-- <span>MyPage</span> -->
+    </div>
+    <main id="mainContent">
+        
+        <section id="mainSection">
+            <div class="section_div_title"><h2 style="font-size: 40px;">FAQ</h2></div>
+            <div class="container">
+                <div class="faq">
+                    <div class="title">BPT 계정을 생성하고싶어요.</div>
+                    <div class="Content">
+                        BPT 회원가입 절차는 매우 간단합니다! <br> <br> 
+                        BPT 홈페이지에서 계정 등록하기 버튼을 눌러 회원 가입 후 최고의 스포츠 영양 제품들을 직접 체헙해보시고 최신 제품과 할인정보도 매일 받아보세요.
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="title">계정에 등록되어 있는 개인 정보를 변경하고 싶습니다.</div>
+                    <div class="Content">
+                        로그인 후 나의 계정 페이지에서 기존에 등록하신 결제카드 정보, 계정 비밀번호, 주소록 등을 수정하실 수 있습니다.  
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="title">회원 가입시 등록한 개인정보가 안전하게 보호되는지 궁금합니다.</div>
+                    <div class="Content">
+                        BPT는 개인보호법을 준수하며 고객의 개인 정보 보호에 최선을 다합니다. 개인정보 보호와 관련하여 자세히 알고 싶으시다면 개인정보이용 약관 페이지를 참고해 주세요.
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="title">비밀번호가 생각나지 않아요.</div>
+                    <div class="Content">
+                        걱정하지 마세요. <a href="signin.html">로그인</a> 페이지에서 ‘패스워드를 잊어버리셨나요?’ 버튼을 클릭하시면 빠르고 간편하게 새로운 비밀번호를 설정하실 수 있습니다. 
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="title">이벤트 관련 이메일을 받아보고 싶지 않아요.</div>
+                    <div class="Content">BPT 이벤트 정보 이메일을 받아보고 싶지 않으시다면 나의 계정 페이지에서 ‘이메일 수신여부’를 변경하실 수 있습니다.
+                        추후 이벤트 관련 정보를 다시 받아보시고 싶다면 언제든 ‘이메일 수신여부’를 변경하실 수 있습니다. </div>
+                </div>
+               
+        
+                <div class="one">
+                    <br> <br>
+                    <p>기타 문의는 1:1문의하기를 이용바랍니다.</p>
+                    <div class="inquiry">
+                        <a href="#">1:1 문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <div class='clear'></div> <!-- float 속성 해제-->
+    
+    <!-- ////////////////푸터 시작/////////////// -->
+    <footer class="footer_main">
+        <div class="footer_main_div">
+            <div class="footer_contents">
+                <span><a href="#">오시는길</a></span>
+                <span>|</span>
+                <span><a href="#">이용약관</a></span>
+                <span>|</span>
+                <span><a href="#">개인정보취급방침</a></span>
+            </div>
+            <br>
+            <div class="footer_contents">
+                <span><a href="#">BPT 경기 김포시 풍무로 000</a></span>
+                <span>|</span>
+                <span><a href="#">T.031-000-0000</a></span>
+                <span>|</span>
+                <span><a href="#">F.031-000-0100</a></span>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ////////////////푸터 끝/////////////// -->
+
+</body>
+
+</html>

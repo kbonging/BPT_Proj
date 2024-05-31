@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>주문목록</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/orderList.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+        
+        .green{
+            color: green;
+        }
+
+        .brDiv {
+            height: 50px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!-- //////////////////헤더 네비 시작////////////// -->
+    <header>
+        <div id="headerDiv">
+            <div id="logoDiv"><a href="index.html" class="logo">BPT</a></div>
+
+            <div id="serchBox">
+                <input type="" class="search-box" placeholder="검색어를 입력하세요...">
+            </div>
+
+            <div id="signDiv">
+                <a href="basket.html"><img src="img/shoppingBasket.png" alt="" width="100px"></a>
+                <button class="Signin-button" onclick="location.href='signin.html'">Sign in</button>
+                <button class="Signup-button" onclick="location.href='signup.html'">Sign up</button>
+            </div>
+        </div>
+
+    </header>
+    
+
+    <nav id="headNav">
+        <div id="menu">
+            <ul>
+                <li><a href="proteinList.html">프로틴</a>
+                    <ul>
+                        <li><a href="#" >프로틴 분말</a></li>
+                        <li><a href="#" >프로틴 음료</a></li>
+                        <li><a href="#" >시니어 단백질</a></li>
+                    </ul>
+                </li>
+                <li><a href="Supplements_List.html">보조식품</a>
+                    <ul>
+                        <li><a href="#">닭가슴살</a></li>
+                        <li><a href="#">스페셜패키지</a></li>
+                        <li><a href="#">단백질 간식</a></li>
+                    </ul>
+                </li>
+                <li><a href="sporting_Goods_List.html">스포츠용품</a></li>
+                <li><a href="#">커뮤니티</a>
+                    <ul>
+                        <li><a href="#">자유게시글</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">QNA</a></li>
+                        <li><a href="#" class="FAQ">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- //////////////////헤더 네비 끝////////////// -->
+
+    <main class="main_contents">
+
+        <section>
+            
+            <!-- 주문하기 메인 div 시작 -->
+            <div class="order_Main_div">
+
+                <!-- 서브타이틀1 시작 -->
+                <h2>
+                    <span class="bar"></span>
+                    주문내역 조회
+                </h2>
+                <!-- 서브타이틀1 끝 -->
+
+                <div class="product_div">
+                    <div class="product_inner_div">
+                        <div class="order_img_div">
+                            <img src="img/basket1.png" alt="">
+                        </div>
+
+                        <div class="item_explanation">
+                            <span>[락토프리 고단백 프로틴 파우더]</span>
+                            <br>
+                            <br>
+                            <span>옵션 : 초코맛</span>
+                        </div>
+
+                        <div class="item_count">
+                            <span>1개</span>
+                        </div>
+
+                        <div class="item_price">
+                            <span></span>
+                        </div>
+
+                        <div class="delivery_price">
+                            <span>배송중</span>
+                        </div>
+
+                    </div>
+                </div> <!-- product_div 끝 -->
+
+                
+                <div class="brDiv"></div>
+
+                <!-- /////////////////////통 복사 시작/////////////// -->
+
+
+                <!-- 테이블 시작 -->
+                <table class="Orderer_info_teble"> 
+                    <tr>
+                        <th>정기 배송 내역 [1]</th>
+                        <td>정기 배송 신청현황 <span class="red">[확인하기]</span></td>
+                    </tr>
+                    <tr>
+                        <th>구매 취소내역 [0]</th>
+                        <td>구매신청 및 입금후 취소한 내역 <span class="red">[환불전]</span></td>
+                    </tr>
+                    <tr>
+                        <th>구매취소 환불완료 [0]</th>
+                        <td>구매신청후 환불이 완료된 내역입니다. </td>
+                    </tr>
+                    <tr>
+                        <th>구매완료내역 [0]</th>
+                        <td>구매완료된 내역입니다. <span class="green">[환불전]</span> </td>
+                    </tr>
+                    <tr>
+                        <th>판매자 취소내역 [0]</th>
+                        <td>판매자가 상품판매를 취소한 상태입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>판매자 취소완료내역 [0]</th>
+                        <td>판매자의 상품판매 취소가 완료된 상태입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>반품요청 [0]</th>
+                        <td>내가 구매한 상품의 반품을 요청하였습니다.</td>
+                    </tr>
+                    <tr>
+                        <th>반품성사 [0]</th>
+                        <td>상품의 반품이 성사된 주문건입니다. (환불처리가 되지않은 내역)</td>
+                    </tr>
+                    <tr>
+                        <th>반품환불완료 [0]</th>
+                        <td>반품성사 및 환불처리가 완료된 내역입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>전체 구매내역 [4]</th>
+                        <td>내가 구매한상품의 모든 내역을 한눈에 보여줍니다.</td>
+                    </tr>
+                    
+                </table>
+                <!-- 테이블 끝 -->
+                <!-- /////////////////////통 복사 끝/////////////// -->
+                <div class="brDiv"></div>
+                <div class="Delivery_information_div">
+                    <p>BPT 상품 배송안내</p>
+                    <p>-평일 오후 1시 이전 결제 완료 시 당일 출고를 원칙으로 하지만, 택배사의 사정에 따라 배송 중 상태가 다소 길어질 수 있습니다.</p>
+                    <p>[배송준비중] 고객님께 제품을 배송하기 위해 준비중인 상태입니다.
+                        <br>
+                        수도권의 경우 보통은 익일 제품을 받으실 수 있으나 택배사의 물류가 많거나 인력부족 등의 사정에 따라 지연될 수 있는 점 양해 바랍니다.
+                    </p>
+                    <p>
+                        [배송중] 고객님께 제품을 전달하기 위해 배송중인 상태입니다.
+                        <br>
+                        물품 발송 후 받으시기까지 약 2~3일 가량 소요될 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <!-- 주문하기 메인 div 끝 -->
+
+        </section>
+        
+    </main>
+
+    <div class='clear'></div> <!-- float 속성 해제-->
+
+    <!-- ////////////////푸터 시작/////////////// -->
+    <footer class="footer_main">
+        <div class="footer_main_div">
+            <div class="footer_contents">
+                <span><a href="#">오시는길</a></span>
+                <span>|</span>
+                <span><a href="#">이용약관</a></span>
+                <span>|</span>
+                <span><a href="#">개인정보취급방침</a></span>
+            </div>
+            <br>
+            <div class="footer_contents">
+                <span><a href="#">BPT 경기 김포시 풍무로 000</a></span>
+                <span>|</span>
+                <span><a href="#">T.031-000-0000</a></span>
+                <span>|</span>
+                <span><a href="#">F.031-000-0100</a></span>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ////////////////푸터 끝/////////////// -->
+    
+
+</body>
+
+</html>

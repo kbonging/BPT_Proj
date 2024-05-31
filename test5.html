@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sticky Banner</title>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .banner {
-            width: 100%;
-            background-color: #f2f2f2;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            z-index: 1000;
-        }
-
-        .banner img {
-            width: 80%;
-            height: auto;
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        /* Example content to enable scrolling */
-        .content div {
-            height: 1000px;
-            background-color: #f9f9f9;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>공지사항 및 Q&A 게시판</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+
+    header {
+        background-color: #003942;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #003942;
+    }
+
+    .board-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .board-item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .board-item:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    footer {
+        background-color: #003942;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+
 <body>
+    <header>
+        <h1>공지사항 및 Q&A 게시판</h1>
+    </header>
 
-<div class="banner">
-    <img src="path/to/your/image.jpg" alt="Banner Image">
-</div>
+    <main>
+        <section id="notice-board">
+            <h2>공지사항</h2>
+            <ul class="board-list">
+                <li class="board-item">공지사항 1</li>
+                <li class="board-item">공지사항 2</li>
+                <li class="board-item">공지사항 3</li>
+            </ul>
+        </section>
 
-<div class="content">
-    <div>Content Block 1</div>
-    <div>Content Block 2</div>
-    <div>Content Block 3</div>
-    <div>Content Block 4</div>
-</div>
+        <section id="qa-board">
+            <h2>Q&A</h2>
+            <ul class="board-list">
+                <li class="board-item">Q&A 1</li>
+                <li class="board-item">Q&A 2</li>
+                <li class="board-item">Q&A 3</li>
+            </ul>
+        </section>
+    </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        var banner = $('.banner');
-        var bannerOffset = banner.offset().top;
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
 
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > bannerOffset) {
-                banner.addClass('sticky');
-            } else {
-                banner.removeClass('sticky');
-            }
+    <script src="scripts.js">
+        document.addEventListener('DOMContentLoaded', function () {
+            const boardItems = document.querySelectorAll('.board-item');
+
+            boardItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    alert(item.textContent + '의 내용을 여기에 표시합니다.');
+                });
+            });
         });
-    });
-</script>
-testtttttttttttttt
+    </script>
 </body>
+
 </html>
