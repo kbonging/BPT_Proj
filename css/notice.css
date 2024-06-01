@@ -1,0 +1,113 @@
+
+
+/* 테이블 메인 */
+.notice_table{
+    width: 1000px;
+    border-collapse: collapse; 
+    border: solid 1px #e5e5e5;
+}
+
+.notice_table tr th{
+    /* border: solid 1px #e5e5e5; */
+    /* background-color: #f9f9f9; */
+}
+
+.notice_table tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.notice_table tr th, td{
+    height: 40px;
+    text-align: center;
+}
+
+.notice_tr td{
+    background-color: #eeeeee;
+}
+
+
+/* 첫번째 td */
+.notice_table tr td:first-child {
+    width: 100px;
+}
+
+/* 두번째 td */
+.notice_table tr td:nth-child(2) {
+    text-align: left;
+    width: 600px;
+}
+/* 두번째 td */
+.notice_table tr td:nth-child(2):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.red{
+    color: red;
+}
+
+.secret{
+    color: #999999;
+}
+
+/* 페이징 버튼///////////////// */
+.pagination {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #333;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #e5e5e5;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #e5e5e5;
+    color: white;
+    border: 1px solid #e5e5e5;
+}
+
+.not_foot{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+.search{
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+}
+
+select{
+    width: 120px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+    color: #6c6c6c;
+}

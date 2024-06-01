@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        
+
+        /* ------------------mainContent 시작------------------*/
+
+        #mainContent{
+            display: flex;
+            justify-content: center; /* 수평 가운데 정렬 */
+            /* background-color: #f2f4f7; */
+            /* height: 100vh; 화면 전체 높이를 기준으로 섹션을 가운데로 정렬 */
+        }
+
+        #mainSection{
+            display: flex;
+            flex-direction: column; /* 세로 방향으로 아이템들을 배치 */
+            
+            /* 수직 가운데 정렬 */
+            align-items: center; 
+            background-color: white;
+            /* border: solid 1px #dce1eb; */
+            width: 1000px;
+            margin: 30px 10px 10px 10px;
+        }
+
+        
+      
+
+        .main_title{
+            font-size: 30px;
+        }
+
+        /* ------------section 시작----------------*/
+        
+
+        .section_div_title{
+            margin-left: -800px;
+            margin-bottom: 20px;
+        }
+
+        
+
+        /* ------------section 끝----------------*/
+
+
+        /* ------------------mainContent 끝------------------*/
+
+
+
+
+        footer {
+            width: 100%;
+            height: 150px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <!-- //////////////////헤더 네비 시작////////////// -->
+    <header>
+        <div id="headerDiv">
+            <div id="logoDiv"><a href="index.html" class="logo">BPT</a></div>
+
+            <div id="serchBox">
+                <input type="" class="search-box" placeholder="검색어를 입력하세요...">
+            </div>
+
+            <div id="signDiv">
+                <a href="basket.html"><img src="img/shoppingBasket.png" alt="" width="100px"></a>
+                <button class="Signin-button" onclick="location.href='signin.html'">Sign in</button>
+                <button class="Signup-button" onclick="location.href='signup.html'">Sign up</button>
+            </div>
+        </div>
+
+    </header>
+    
+
+    <nav id="headNav">
+        <div id="menu">
+            <ul>
+                <li><a href="proteinList.html">프로틴</a>
+                    <ul>
+                        <li><a href="#" >프로틴 분말</a></li>
+                        <li><a href="#" >프로틴 음료</a></li>
+                        <li><a href="#" >시니어 단백질</a></li>
+                    </ul>
+                </li>
+                <li><a href="Supplements_List.html">보조식품</a>
+                    <ul>
+                        <li><a href="#">닭가슴살</a></li>
+                        <li><a href="#">스페셜패키지</a></li>
+                        <li><a href="#">단백질 간식</a></li>
+                    </ul>
+                </li>
+                <li><a href="sporting_Goods_List.html">스포츠용품</a></li>
+                <li><a href="#">커뮤니티</a>
+                    <ul>
+                        <li><a href="#">자유게시글</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">QNA</a></li>
+                        <li><a href="#" class="FAQ">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- //////////////////헤더 네비 끝////////////// -->
+
+    
+    <div class="main_title">
+        <!-- <span>MyPage</span> -->
+    </div>
+    <main id="mainContent">
+        
+        <section id="mainSection">
+            <div class="section_div_title"><span style="font-size: 40px; ">고객센터</span></div>
+            <div class="container">
+                <table class="notice_table">
+                    <tr>
+                        <th>No</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>등록일</th>
+                        <th>조회</th>
+                    </tr>
+                    <tr class="notice_tr">
+                        <td>공지</td>
+                        <td>BPT몰 마일리지 정책 변경안내</td>
+                        <td>관리자</td>
+                        <td>24-06-01</td>
+                        <td>358</td>
+                    </tr>
+                    <tr class="notice_tr">
+                        <td>공지</td>
+                        <td>[담청자 발표] 닥터더케어 산양유 단백질 100% 체험단 최종 당첨자 발표</td>
+                        <td>관리자</td>
+                        <td>24-05-02</td>
+                        <td>4559</td>
+                    </tr>
+                    <tr class="notice_tr">
+                        <td>공지</td>
+                        <td>프로틴 분말 제품 가격인상 안내</td>
+                        <td>관리자</td>
+                        <td>24-04-24</td>
+                        <td>128</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td>배송지 변경은 어떻게 해요?<span class="red">[2]</span></td>
+                        <td>apple***</td>
+                        <td>24-06-01</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td>운동후 2스쿱 해서 먹어도 되나요?<span class="red">[5]</span></td>
+                        <td>skyp***</td>
+                        <td>24-05-28</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td>대두가 중국산이네요<span class="red">[1]</span></td>
+                        <td>ljko***</td>
+                        <td>24-05-27</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td>우유알러지가 있어서요. 물이랑 섞어먹어도 되나요?<span class="red">[2]</span></td>
+                        <td>ger***</td>
+                        <td>24-05-27</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td>프로틴 파우더 스푼도 안에 들어있나요?<span class="red">[1]</span></td>
+                        <td>gyui***</td>
+                        <td>24-05-25</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td><span class="secret">비밀글입니다.</span><span class="red">[2]</span></td>
+                        <td>uytr***</td>
+                        <td>24-05-24</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td><span class="secret">비밀글입니다.</span><span class="red">[4]</span></td>
+                        <td>mfgj***</td>
+                        <td>24-05-24</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td><span class="secret">비밀글입니다.</span><span class="red">[3]</span></td>
+                        <td>tyui***</td>
+                        <td>24-05-22</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Q&A</td>
+                        <td>바바리안푸드 3통 쉐이크통 1개시켰는데 한통 잘못왔어요<span class="red">[5]</span></td>
+                        <td>eyuy***</td>
+                        <td>24-05-21</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+                <div class="not_foot">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <select name="keyword" id="" class="keyword">
+                        <option value="1">제목</option>
+                        <option value="1">이름</option>
+                    </select>
+                    <input type="text" class="searchBox" placeholder="검색어를 입력하세요">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <div class='clear'></div> <!-- float 속성 해제-->
+    
+    <!-- ////////////////푸터 시작/////////////// -->
+    <footer class="footer_main">
+        <div class="footer_main_div">
+            <div class="footer_contents">
+                <span><a href="#">오시는길</a></span>
+                <span>|</span>
+                <span><a href="#">이용약관</a></span>
+                <span>|</span>
+                <span><a href="#">개인정보취급방침</a></span>
+            </div>
+            <br>
+            <div class="footer_contents">
+                <span><a href="#">BPT 경기 김포시 풍무로 000</a></span>
+                <span>|</span>
+                <span><a href="#">T.031-000-0000</a></span>
+                <span>|</span>
+                <span><a href="#">F.031-000-0100</a></span>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ////////////////푸터 끝/////////////// -->
+
+</body>
+
+</html>

@@ -27,6 +27,11 @@ $(function () {
 
     //////////// nav 끝 ///////////////
 
+    // 공지사항 클릭 시 이동
+    $('.notice').click(function(){
+        location.href="notice.html";
+    });
+
     //FAQ 클릭 시 이동
     $('.FAQ').click(function(){
         location.href="FAQ.html";
