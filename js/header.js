@@ -27,6 +27,21 @@ $(function () {
 
     //////////// nav 끝 ///////////////
 
+    // 프로틴 버튼 및 프로틴 서브메뉴 클릭 시 이동
+    $('.Protein_url').click(function(){
+        location.href="proteinList.html";
+    });
+
+    // 보조식품 버튼 및 서브메뉴 클릭 시 이동
+    $('.Supplements_url').click(function(){
+        location.href="Supplements_List.html";
+    });
+
+    // 스포츠 용품 버튼 및 서브메뉴 클릭 시 이동
+    $('.sporting_Goods_url').click(function(){
+        location.href="sporting_Goods_List.html";
+    });
+
     // 공지사항 클릭 시 이동
     $('.notice').click(function(){
         location.href="notice.html";

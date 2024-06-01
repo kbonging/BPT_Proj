@@ -50,7 +50,7 @@
     color: #999999;
 }
 
-/* 페이징 버튼///////////////// */
+/* /////////////////페이징 시작///////////////// */
 .pagination {
     display: inline-block;
     margin-top: 20px;
@@ -87,9 +87,10 @@
 .search{
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-input[type="text"] {
+.searchBox {
     width: 300px;
     padding: 8px;
     margin: 4px 0;
@@ -111,3 +112,5 @@ select{
     background: #f9f9f9;
     color: #6c6c6c;
 }
+
+/* /////////////////페이징 끝///////////////// */
