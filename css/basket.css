@@ -246,7 +246,14 @@ p + :not(p) {
     width: 40px;
 }
 
-
+.price_input{
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    text-align: center;
+    width: 100px;
+    /* background: transparent; */
+}
 /* ------ basket_div 끝 ------ */
 
 
