@@ -1,0 +1,164 @@
+section{
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+/* 글쓰기 메인 div */
+.boardWrite_div{
+    width: 1200px;
+    /* height: 1200px; */
+    /* border: solid 1px red; */
+}
+
+.bar{
+    border-left: solid 3px black;
+    margin-right: 10px;
+}
+
+.bar2{
+    border-left: solid 1px #e5e5e5;
+    color: #777777;
+}
+
+/* 주문 상품 div */
+.product_div{
+    width: 1200px;
+    height: 200px;
+    border: solid 1px #e5e5e5;
+    background-color: #f9f9f9;
+    padding: 40px;
+    box-sizing: border-box; 
+}
+
+.product_inner_div{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 1px #e5e5e5;
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+/* 주문 상품 이미지 div */
+.order_img_div{
+    width: 118px;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.order_img_div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 주문하기 페이지 텍스트 */
+.order_text{
+    font-size: 11px;
+    color: #777;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.text{
+    font-size: 11px;
+    color: #777;
+    margin: 0;
+}
+
+/* 테이블 설정 시작 */
+.boardWrite_table{
+    border-collapse: collapse; 
+    width: 1200px;
+    font-size: 13px;
+}
+
+.boardWrite_table tr{
+    height: 55px;
+}
+
+.boardWrite_table tr th{
+    border: solid 1px #e5e5e5;
+    width: 140px;
+    background-color: #f9f9f9;
+    color: #6c6c6c;
+}
+
+.boardWrite_table tr td{
+    border: solid 1px #e5e5e5;
+    padding-left: 20px;
+}
+
+.board_title{
+    /* width: 800px; */
+}
+
+input[type="text"] {
+    width: 1000px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+}
+
+
+
+input[type="radio"] {
+    margin-right: 8px; 
+}
+
+select{
+    width: 120px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+    color: #6c6c6c;
+}
+
+#board_write_txt {
+    width: 1000px;
+    height: 700px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; /* 둥근 모서리 */
+    font-size: 13px;
+    background: #f9f9f9;
+}
+
+
+
+/* 테이블 설정 끝 */
+
+.red{
+    color: red;
+}
+
+#board_write_txt{
+    width: 1000px;
+    height: 700px;
+}
+
+.board_write_Btn_div{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#content_txt{
+    height: 500px;
+}
+
+
+
